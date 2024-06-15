@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Login component */
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.spotify-logo {
+  width: 120px;
+  height: 120px;
+  margin-top: 60px;
+  position: absolute;
+  margin-left: 80px;
+}
+
+body.light-mode {
+  @apply bg-white text-black;
+}
+
+.login-container {
+  @apply flex items-center justify-center min-h-screen bg-gray-900;
+  margin-top: -50px;
+  margin-bottom: 0px;
+}
+
+.login-card {
+  @apply bg-gray-800 p-12 rounded-lg shadow-lg text-center;
+  width: 380px; /* Adjust width as needed */
+  height: 390px;
+}
+
+.login-heading {
+  @apply text-3xl font-bold text-gray-100 mb-6;
+  margin-bottom: 190px;
+}
+
+.login-button {
+  /* Use the tailwind classes directly */
+  @apply relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900;
+  margin-bottom: -60px; /* Adjust this value to move the button lower */
+}
+
+/* Additional styles for the button */
+.relative.inline-flex.group .absolute {
+  transition: all 1s;
+  opacity: 0.7;
+  inset: -1px;
+  background: linear-gradient(to right, #44BCFF, #FF44EC, #FF675E);
+  border-radius: 0.75rem;
+  filter: blur(0.75rem);
+}
+
+.relative.inline-flex.group:hover .absolute {
+  opacity: 1;
+  inset: 1px;
+  transition-duration: 0.2s;
+  animation: tilt 10s infinite linear;
+}
+
+.space-x-3 .peer:checked ~ .peer-checked\:bg-primary-600 {
+  background-color: #44BCFF;
+}
+
+.space-x-3 .peer:checked ~ .peer-focus\:ring-4 {
+  box-shadow: 0 0 0 4px rgba(68, 188, 255, 0.5);
+}

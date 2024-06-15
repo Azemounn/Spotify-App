@@ -1,0 +1,15 @@
+.app {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-top: 50px;
+  }
+  
