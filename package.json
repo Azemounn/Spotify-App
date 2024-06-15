@@ -2,6 +2,7 @@
   "name": "spotify-playlist-appv2",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://your-netlify-site-url.netlify.app",
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "@testing-library/jest-dom": "^5.17.0",
