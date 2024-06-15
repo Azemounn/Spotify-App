@@ -1,0 +1,21 @@
+[build]
+  # Command to run to build your project
+  command = "npm install --legacy-peer-deps && npm run build"
+  
+  # Directory to publish to Netlify
+  publish = "build"
+
+[build.environment]
+  NODE_ENV = "production"
+
+# Add any redirects if necessary
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# You can also add any additional settings such as plugins or environment variables
+# [[plugins]]
+#   package = "netlify-plugin-example"
+#   [plugins.inputs]
+#     some_setting = "value"
